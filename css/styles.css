@@ -1,0 +1,58 @@
+#symbol_map {
+	top: 100px;
+	bottom: 100px;
+	left: 100px;
+	right: 100px;
+	height: 1000px;
+	width: 800px;
+}
+
+h1 {
+	font-family: 'Arial', sans-serif;
+	font-size: 3.8em
+		/* Replace 'YourFontName' with the desired font name */
+}
+
+h2 {
+	font-family: 'Arial', sans-serif;
+	font-size: 1.9em
+		/* Replace 'YourFontName' with the desired font name */
+}
+
+h3 {
+	font-family: 'Arial', sans-serif;
+	/* Replace 'YourFontName' with the desired font name */
+}
+
+p {
+	font-family: 'Arial', sans-serif;
+	/* Replace 'YourFontName' with the desired font name */
+}
+
+.big-word {
+	font-size: 45px;
+	/* Adjust the font size to your preference */
+	font-weight: bold;
+	/* Optional: Make the big word bold */
+	color: green
+}
+
+.centered-text {
+	text-align: center;
+}
+
+.red-text {
+	color: red;
+}
+
+.orange-text {
+	color: orange;
+}
+
+.teal-text {
+	color: teal;
+}
+
+.purple-text {
+	color: purple;
+}

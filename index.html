@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+
+    <!-- CSS file -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+    <style>
+        /* Center the content and limit max width */
+        .container {
+            max-width: 800px;
+            /* Adjust the max width as needed */
+            margin: 0 auto;
+            /* Center the container horizontally */
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .text {
+            text-align: right;
+            /* Align text to the right */
+            margin-left: 10px;
+            /* Add some space between the graph and text */
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">GAMBLING TAKEOVER</h1>
+
+    <div class="centered-text">
+        <p>
+            <span class="big-word">31%</span>
+            <br>
+            of Victorian high school students participated in gambling.
+            <br>
+            <br>
+            <span class="big-word">25%</span>
+            <br>
+            gambling problems lead to relationship difficulties.
+            <br>
+            <br>
+            <span class="big-word">25%</span>
+            <br>
+            children can name four or more gambling brands.
+            <br>
+            <br>
+            <span class="big-word">42%</span>
+            <br>
+            of people who deal with gambling problems have been diagnosed with depression
+        </p>
+    </div>
+    <h2>Australia is most at risk!</h2>
+    <div id="dot_map"></div>
+    <script type="text/javascript">
+
+        var spec2 = "js/dv2map.vg.json";
+        vegaEmbed('#dot_map', spec2).then(function (result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
+    </script>
+    <div style="display: flex; justify-content: space-between;">
+        <p style="width: 49%;">
+            From the map, we can see that the country who spends the most amount of money per capita
+            on gambling, is Australia. This means that in Australia, minors are at a higher risk of being
+            exposed to gambling compared other countries around the world.
+            <br>
+            <br>
+            This type of gambling activity will leads to young adults being falsely mislead into believing
+            that gambling may be a regular hobby or past time, however, the reality is far from it.
+        </p>
+        <p style="width: 49%;">
+            <! -- Add here later -->
+                <br>
+                <br>
+
+        </p>
+    </div>
+
+    <h2>What types of gambling?</h2>
+
+    <div id="bar_chart"></div>
+
+    <script type="text/javascript">
+
+        var spec2 = "js/week10hw2.json";
+        vegaEmbed('#bar_chart', spec2).then(function (result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+    </script>
+    <div style="display: flex; justify-content: space-between;">
+        <p style="width: 49%;">
+            The chart above indicates that gambling machines by far contribute the net loss. What may seem like an
+            innocent $5 play
+            may and often does turn into an uncontrollable addiction. In conjunection with the fact that most of these
+            machines
+            have bright, colourful cartoons and animations for every spin, and the results are catastrophic.
+            <br>
+            <br>
+            The chart above also depicts wagering that is another primary contributer to the net losses of Australia.
+            Wagering is most commonly
+            called sports betting or horse betting. Much like gambling machines, minors stand a high chance of being
+            exposed to sports/horse betting advertisements when
+            they themselves watch sport as they commonly appear during breaks.
+        </p>
+        <p style="width: 49%;">
+            <! -- Add here later -->
+                <br>
+                <br>
+
+        </p>
+    </div>
+
+    <h2>Third section</h2>
+    <div id="line_chart"></div>
+
+    <script type="text/javascript">
+
+        var spec2 = "js/linechart.json";
+        vegaEmbed('#line_chart', spec2).then(function (result) {
+            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+    </script>
+    <div style="display: flex; justify-content: space-between;">
+        <p style="width: 49%;">
+            The line chart indicates that the states of <span class="orange-text">New South Wales</span>, <span
+                class="purple-text">Victoria</span> and <span class="teal-text">Queensland</span> contribute the most to
+            the total gambling net loss of Australia.
+            This indicates that whilst not the risk of children and teenagers being exposed to gambling in these states
+            is much higher than others,
+            but also indicates that these states contain many individuals who suffer from gambling addication and
+            financial difficulties.
+            <br>
+            <br>
+            The chart also indicate fairly steep drop in net losses in 2010 compared to previous years for
+            <span class="orange-text">New South Wales</span>. This is due to the new gambling regulations that were
+            introduced in
+            2010.
+            These regulations were updated from the previous one in 2002 and some change includes
+            A ban on the use of credit cards to gamble at casinos and licensed clubs,
+            A requirement for casinos to implement responsible gambling programs, including measures to identify and
+            assist problem gamblers and
+            Increased penalties for illegal gambling. These changes attempt to mitigate the impacts of long-term
+            gambling addiction and from the chart,
+            it worked. Whilst this may have temporaily mitigated net losses, they numbers have started to rise again due
+            to factors such as increasing population,
+            most worryingly, additiction is hard to resolve.
+        </p>
+        <p style="width: 49%;">
+            <! -- Add here later -->
+                <br>
+                <br>
+
+        </p>
+    </div>
+</body>
+
+</html>

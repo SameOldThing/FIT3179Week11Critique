@@ -1,0 +1,74 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500,
+    "height": 500,
+    "title": {
+        "text": "Total Real Gambling Expenditure/Net Losses by State"
+    },
+    "data": {
+        "url": "data/lossesbystate.csv"
+    },
+    "layer": [
+        {
+            "mark": {
+                "type": "line",
+                "point": true
+            },
+            "encoding": {
+                "x": {
+                    "field": "Year",
+                    "type": "quantitative",
+                    "title": "Year"
+                },
+                "y": {
+                    "field": "Value",
+                    "type": "quantitative",
+                    "title": "Total real gambling expenditure/net losses ($ billion)"
+                },
+                "color": {
+                    "field": "State",
+                    "type": "nominal",
+                    "title": "State"
+                }
+            }
+        },
+        {
+            "mark": {
+                "type": "circle",
+                "color": "white",
+                "size": 50
+            },
+            "encoding": {
+                "x": {
+                    "field": "Year",
+                    "type": "quantitative"
+                },
+                "y": {
+                    "field": "Value",
+                    "type": "quantitative"
+                },
+                "color": {
+                    "field": "State",
+                    "type": "nominal"
+                },
+                "tooltip": [
+                    {
+                        "field": "Year",
+                        "type": "ordinal",
+                        "title": "Year"
+                    },
+                    {
+                        "field": "State",
+                        "type": "nominal",
+                        "title": "State"
+                    },
+                    {
+                        "field": "Value",
+                        "type": "quantitative",
+                        "title": "Value"
+                    }
+                ]
+            }
+        }
+    ]
+}
